@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Formulario</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <body>
+        <div class="container">
+            <div class="notification">
+                <form action="insert.php" class="column is-three-fifths is-offset-one-fifth">
+                    <h1>Formulario Producto</h1>
+                    <br>
+                    <label>Product:</label>
+                    <input class="input is-primary" type="text" name="uno" placeholder="Ingrese un producto" minlength="2" maxlength="99" required pattern="[A-Za-z]+">
+                    <br>
+                    <br>
+                    <label>Price:</label>
+                    <input class="input is-primary" type="text" name="dos" placeholder="Ingrese el precio" minlength="1" maxlength="99" required pattern="[0-9,1.1]+">
+                    <br>
+                    <br>
+                    <label>Is_active
+                        <input type="checkbox" name="activo">
+                        <br>
+                        <br>
+                        <button class="button is-black">Save</button>
+                        <br>
+                        <br>
+                        <button type="reset" class="button is-black">Cancel</button>
+                </form>
+            </div>
+        </div>
+    </body>
+
+</html>
